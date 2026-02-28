@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 12px; /*espaço entre o conteúdo e a borda do elemento*/
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /*fonte do site*/
+}
+body{ /*seletor*/
+    background:linear-gradient(135deg,#000000, #d39758); /*cria um degradê no fundo*/
+    color: #ffff; /*cor do texto*/
+    background-blend-mode: overlay;
+    text-shadow: 0 0 8px #d39758 5%; /*sombra do texto*/
+}
+.foto{
+    width: 200px;
+    height: 200px; /*altura de um elemento*/
+    border-radius: 50%; /*arredondar os cantos de um elemento*/
+}
+
+.hero{
+    color: #fff;
+    text-shadow: 0 0 8px #c99700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px; /*tamanho do texto*/
+    text-align: center;
+    padding: 120px 20px;
+    
+}
+.hero h1 span{
+    color: #d39758;
+}
+.hero h2{
+    color: #fff;
+    text-shadow: 0 0 8px #c99700;
+    font-family: cursive;
+    font-size: 50px;
+}
+h2{
+    margin-top: 30px; /*espaço em cima do elemento*/
+    margin-bottom: 30px; /*espaço embaixo do elemento*/
+    color: #d39858;
+    text-shadow: 0 0 8px black;
+} 
+
+/*Projetos*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+.card{
+    background: #f19d448d;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #000000;
+}
+.card button{
+    margin-top: 10px;
+    background: #eca04f;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+
+}
+.projetos{
+    color: white; /*cor do texto*/
+}
+.contatos{
+    background: #f19d448d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000000;
+    gap: 50px;
+    text-shadow: 0 0 15px #000000;
+}
+.contatos h2{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.contatos-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+.contatos-item span{
+    font-weight: bold;
+}
+.contatos-item i{
+    font-size: 20px;
+}
+.contatos-item a{
+    margin: 0;
+    position: relative;
+    text-shadow:0 0 15px #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.contatos-item a:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-top: 60px;
+    font-size: 14px;
+}
