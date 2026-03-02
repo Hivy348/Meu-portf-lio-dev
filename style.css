@@ -7,10 +7,10 @@
     font-family: 'Courier New', Courier, monospace; /*fonte do site*/
 }
 body{ /*seletor*/
-    background:linear-gradient(135deg,#000000, #d39758); /*cria um degradê no fundo*/
+    background:linear-gradient(135deg,#000000, #9c4141); /*cria um degradê no fundo*/
     color: #ffff; /*cor do texto*/
     background-blend-mode: overlay;
-    text-shadow: 0 0 8px #d39758 5%; /*sombra do texto*/
+    text-shadow: 0 0 8px #f2c6c6 5%; /*sombra do texto*/
 }
 .foto{
     width: 200px;
@@ -20,7 +20,7 @@ body{ /*seletor*/
 
 .hero{
     color: #fff;
-    text-shadow: 0 0 8px #c99700;
+    text-shadow: 0 0 8px #f2c6c6;
     font-family: 'Montserrat', sans-serif;
     font-size: 60px; /*tamanho do texto*/
     text-align: center;
@@ -28,18 +28,18 @@ body{ /*seletor*/
     
 }
 .hero h1 span{
-    color: #d39758;
+    color: #f2c6c6;
 }
 .hero h2{
     color: #fff;
-    text-shadow: 0 0 8px #c99700;
+    text-shadow: 0 0 8px #f2c6c6;
     font-family: cursive;
     font-size: 50px;
 }
 h2{
     margin-top: 30px; /*espaço em cima do elemento*/
     margin-bottom: 30px; /*espaço embaixo do elemento*/
-    color: #d39858;
+    color: #f2c6c6;
     text-shadow: 0 0 8px black;
 } 
 
@@ -52,14 +52,14 @@ h2{
     padding: 50px;
 }
 .card{
-    background: #f19d448d;
+    background: #f2c6c6;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 0 15px #000000;
 }
 .card button{
     margin-top: 10px;
-    background: #eca04f;
+    background: #9c4141;
     border: none;
     border-radius: 15px;
     padding: 8px 16px;
@@ -69,7 +69,7 @@ h2{
     color: white; /*cor do texto*/
 }
 .contatos{
-    background: #f19d448d;
+    background: #f2c6c6;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
@@ -107,4 +107,5 @@ h2{
 footer{
     margin-top: 60px;
     font-size: 14px;
+
 }
