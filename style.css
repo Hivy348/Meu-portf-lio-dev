@@ -65,6 +65,14 @@ h2{
     padding: 8px 16px;
 
 }
+.card a{
+    color: #fff;
+    text-shadow:0 0 15px #000000;
+}
+.card a:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
 .projetos{
     color: #fff; /*cor do texto*/
 }
@@ -114,5 +122,6 @@ footer{
     font-size: 14px;
 
 }
+
 
 
