@@ -1,123 +1,129 @@
 @charset "UTF-8";
 
+/* RESET */
 * {
     margin: 0;
-    padding: 12px; /*espaço entre o conteúdo e a borda do elemento*/
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace; /*fonte do site*/
-}
-body{ /*seletor*/
-    background:linear-gradient(135deg,#000000, #9c4141); /*cria um degradê no fundo*/
-    color: #ffff; /*cor do texto*/
-    background-blend-mode: overlay;
-    text-shadow: 0 0 8px #f2c6c6 5%; /*sombra do texto*/
-}
-.foto{
-    width: 200px;
-    height: 200px; /*altura de um elemento*/
-    border-radius: 50%; /*arredondar os cantos de um elemento*/
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.hero{
+body {
+    background: linear-gradient(135deg, #000000, #9c4141);
     color: #fff;
-    text-shadow: 0 0 8px #f2c6c6;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px; /*tamanho do texto*/
+    text-shadow: 0 0 8px rgba(242, 198, 198, 0.5);
+}
+
+/* FOTO */
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* HERO */
+.hero {
     text-align: center;
     padding: 120px 20px;
-    
 }
-.hero h1 span{
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero h1 span {
     color: #f2c6c6;
 }
-.hero h2{
-    color: #fff;
-    text-shadow: 0 0 8px #f2c6c6;
-    font-family: cursive;
+
+.hero h2 {
     font-size: 50px;
 }
-h2{
-    margin-top: 30px; /*espaço em cima do elemento*/
-    margin-bottom: 30px; /*espaço embaixo do elemento*/
+
+/* TÍTULOS */
+h2 {
+    margin: 30px 0;
     color: #f2c6c6;
     text-shadow: 0 0 8px black;
-} 
+}
 
-/*Projetos*/
-
-.cards{
+/* PROJETOS */
+.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 50px;
 }
-.card{
+
+.card {
     background: #ac3131;
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px #000;
 }
-.card button{
-    margin-top: 10px;
-    background: #9c4141;
-    border: none;
-    border-radius: 15px;
-    padding: 8px 16px;
 
-}
-.card a{
-    color: #fff;
-    text-shadow: 0 0 15px #000000;
-    text-decoration: none;
-}
-.card a:hover{
-    color: #ccc;
-    text-decoration: underline;
-}
-.projetos{
-    color: #fff; /*cor do texto*/
-}
-.contatos{
+/* CONTATOS */
+.contatos {
     background: #ac3131;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 0 20px #000000;
-    gap: 50px;
-    text-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 20px #000;
 }
-.contatos h2{
-    margin-bottom: 20px;
-    color: #fff;
-}
-.contatos-item{
+
+.contatos-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 0;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-.contatos-item span{
-    font-weight: bold;
-}
-.contatos-item i{
-    font-size: 20px;
-}
-.contatos-item a{
-    margin: 0;
-    position: relative;
-    text-shadow:0 0 15px #000000;
+
+/* LINKS */
+.card a,
+.contatos-item a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
 }
-.contatos-item a:hover{
+
+.card a:hover,
+.contatos-item a:hover {
     color: #ccc;
     text-decoration: underline;
 }
-a:visited{
-    color: #fff;
-}
-footer{
+
+/* FOOTER */
+footer {
     margin-top: 60px;
     font-size: 14px;
+    text-align: center;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .foto {
+        width: 140px;
+        height: 140px;
+    }
+
+    .contatos-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
