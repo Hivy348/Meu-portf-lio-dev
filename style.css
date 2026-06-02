@@ -1,118 +1,111 @@
 @charset "UTF-8";
 
-/*Mobile*/
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* MOBILE */
 .container{
     width: 100%;
-    padding: 16px;
     max-width: 100%;
-}
-/*Tablet*/
-@media(min-width: 768px) {
-    .container{
-        max-width: 720px;
-        margin: 0 auto;
-    }
-    .hero{
-    font-size: 36px;
-    padding: 60px 20px;
+    padding: 16px;
 }
 
-    .hero h2{
-    font-size: 24px;
-    }
-    .foto{
-        width: 150px;
-        height: 150px;
-    }
-    .cards{
-    padding: 20px;
-    }
-}
-/*Desktop*/
-@media(min-width: 1024px){
-    .container{
-        max-width: 1200px;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0; /*espaço entre o conteúdo e a borda do elemento*/
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace; /*fonte do site*/
-}
-body{ /*seletor*/
-    background:linear-gradient(135deg,#000000, #9c4141); /*cria um degradê no fundo*/
-    color: #ffffff; /*cor do texto*/
+body{
+    background: linear-gradient(135deg, #000000, #9c4141);
+    color: #ffffff;
     background-blend-mode: overlay;
-    text-shadow: 0 0 8px #f2c6c6; /*sombra do texto*/
+    text-shadow: 0 0 8px #f2c6c6;
 }
+
+/* FOTO */
 .foto{
-    width: 200px;
-    height: 200px; /*altura de um elemento*/
-    border-radius: 50%; /*arredondar os cantos de um elemento*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
+/* HERO */
 .hero{
     color: #ffffff;
     text-shadow: 0 0 8px #f2c6c6;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px; /*tamanho do texto*/
     text-align: center;
-    padding: 120px 20px;
-    
+    padding: 60px 20px;
 }
+
+.hero h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    line-height: 1.2;
+    word-break: normal;
+}
+
 .hero h1 span{
     color: #f2c6c6;
 }
+
 .hero h2{
     color: #ffffff;
     text-shadow: 0 0 8px #f2c6c6;
     font-family: cursive;
-    font-size: 50px;
+    font-size: 24px;
+    margin-top: 20px;
 }
+
 h2{
-    margin-top: 30px; /*espaço em cima do elemento*/
-    margin-bottom: 30px; /*espaço embaixo do elemento*/
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #f2c6c6;
     text-shadow: 0 0 8px black;
-} 
+}
 
-/*Projetos*/
+/* PROJETOS */
 
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
-    padding: 50px;
+    padding: 20px 0;
 }
+
 .card{
     background: #ac3131;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 0 15px #000000;
 }
+
 .card button{
     margin-top: 10px;
     background: #9c4141;
     border: none;
     border-radius: 15px;
     padding: 8px 16px;
-
+    cursor: pointer;
 }
+
 .card a{
     color: #ffffff;
-    text-shadow:0 0 15px #000000;
+    text-shadow: 0 0 15px #000000;
     text-decoration: none;
 }
+
 .card a:hover{
-    color: #ccc;
+    color: #cccccc;
     text-decoration: underline;
 }
+
 .projetos{
-    color: #ffffff; /*cor do texto*/
+    color: #ffffff;
 }
+
+/* CONTATOS */
+
 .contatos{
     background: #ac3131;
     padding: 20px;
@@ -121,44 +114,104 @@ h2{
     box-shadow: 0 0 20px #000000;
     text-shadow: 0 0 15px #000000;
 }
+
 .contatos h2{
     margin-bottom: 20px;
     color: #ffffff;
 }
+
 .contatos-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
+
 .contatos-item span{
     font-weight: bold;
 }
+
 .contatos-item i{
     font-size: 20px;
 }
+
 .contatos-item a{
-    margin: 0;
-    position: relative;
-    text-shadow:0 0 15px #000000;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
 }
+
 .contatos-item a:hover{
-    color: #ccc;
+    color: #cccccc;
     text-decoration: underline;
 }
+
 a:visited{
     color: #ffffff;
 }
+
 footer{
     margin-top: 60px;
     font-size: 14px;
+    text-align: center;
 }
 
+/* TABLET */
 
+@media (min-width: 768px){
 
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
 
+    .foto{
+        width: 180px;
+        height: 180px;
+    }
 
+    .hero{
+        padding: 80px 20px;
+    }
+
+    .hero h1{
+        font-size: 56px;
+    }
+
+    .hero h2{
+        font-size: 32px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .foto{
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero{
+        padding: 120px 20px;
+    }
+
+    .hero h1{
+        font-size: 72px;
+    }
+
+    .hero h2{
+        font-size: 42px;
+    }
+}
