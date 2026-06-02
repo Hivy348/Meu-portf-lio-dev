@@ -4,12 +4,28 @@
 .container{
     width: 100%;
     padding: 16px;
+    max-width: 100%;
 }
 /*Tablet*/
 @media(min-width: 768px) {
     .container{
         max-width: 720px;
         margin: 0 auto;
+    }
+    .hero{
+    font-size: 36px;
+    padding: 60px 20px;
+}
+
+    .hero h2{
+    font-size: 24px;
+    }
+    .foto{
+        width: 150px;
+        height: 150px;
+    }
+    .cards{
+    padding: 20px;
     }
 }
 /*Desktop*/
